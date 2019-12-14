@@ -1,0 +1,269 @@
+* {
+    margin:0;
+    padding:0;
+    box-shadow:0;
+}
+
+#outer-container {
+    background-color: #222;
+    height:100vh;
+    width:98%;
+    margin:0% auto;
+    position: relative;
+}
+
+#inner-border {
+    background-color: #cecece;
+    height:60vh;
+    width:40%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#inner-container {
+    background-color: #000;
+    height:50vh;
+    width:90%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#left-side {
+    background-color: transparent;
+    height:50vh;
+    width:100%;
+    float:left;
+    border-right:1px solid #fff;
+}
+
+    #left-contents {
+        width:100%;
+        height:50vh;
+        background-color: #000;
+    }
+
+#right-side {
+    background-color: transparent;
+    height:50vh;
+    width:49%;
+    float:left;
+}
+
+    #right-contents {
+        width:100%;
+        height:50vh;
+        background-color: transparent;
+    }
+
+.credentials {
+    color:#fff;
+}
+
+.disclaimer {
+    color:#fff;
+}
+
+.login-title {
+    color:#fff;
+    font-size:24pt;
+    padding:2% 0 2% 2%;
+}
+
+#login-container {
+    background-color: #000;
+    padding:2% 0 2% 2%;
+    width:40%;
+    display:block;
+    margin:20px auto;
+    overflow: hidden;
+}
+
+.disclaimer {
+    text-align: center;
+    padding:20% 0 0 0;
+}
+
+#loginBtn {
+    background-color: #cecece;
+    width:90%;
+    padding:2% 2% 2% 0;
+    margin:4% 0% 2% 0;
+    box-shadow: none;
+    border:none;
+}
+
+#username {
+    width:90%;
+    margin:2% 0% 0 0;
+}
+
+#password {
+    width:90%;
+    margin:2% 0% 0 0;
+}
+
+/*
+*
+*   Dashboard Page Styles
+*
+*/
+
+#inner-border-2 {
+    background-color: #cecece;
+    height:90vh;
+    width:90%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#inner-container-2 {
+    background-color: #000;
+    height:80vh;
+    width:90%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#header {
+    width:100%;
+    height:10vh;
+    background-color: aqua;
+}
+
+#main-content {
+    width:100%;
+    height:20vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#main-logo {
+    width:100%;
+    height:20vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#main-content p {
+    color:#fff;
+    font-size: 16pt;
+    padding:4% 2% 0 2%;
+}
+
+#clan-search-btn {
+    width:33%;
+    height:10vh;
+    background-color: #000;
+    float:left;
+    position: relative;
+    border-bottom:1px solid #fff;
+}
+
+    #clan-search-btn p {
+        color:#fff;
+        font-size: 20pt;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #clan-search-btn:hover {
+        width:33%;
+        height:10vh;
+        background-color: #222;
+        float:left;
+        position: relative;
+        border-bottom:1px solid #fff;
+    }
+
+#war-league-btn {
+    width:33%;
+    height:10vh;
+    background-color: #000;
+    float:left;
+    position: relative;
+    border-bottom:1px solid #fff;
+}
+
+    #war-league-btn p {
+        color:#fff;
+        font-size: 20pt;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #war-league-btn:hover {
+        width:33%;
+        height:10vh;
+        background-color: #222;
+        float:left;
+        position: relative;
+        border-bottom:1px solid #fff;
+    }
+
+#classic-war-btn {
+    width:34%;
+    height:10vh;
+    background-color: #000;
+    float:left;
+    position: relative;
+    border-bottom:1px solid #fff;
+}
+
+    #classic-war-btn p {
+        color:#fff;
+        font-size: 20pt;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #classic-war-btn:hover {
+        width:34%;
+        height:10vh;
+        background-color: #222;
+        float:left;
+        position: relative;
+        border-bottom:1px solid #fff;
+    }
+
+#page-nav {
+    width:100%;
+    height:10vh;
+}
+
+#links-1 {
+    width:33%;
+    height:20vh;
+    background-color: #fff;
+    float:left;
+}
+
+#links-2 {
+    width:33%;
+    height:20vh;
+    background-color: #cecece;
+    float:left;
+}
+
+#links-3 {
+    width:34%;
+    height:20vh;
+    background-color: #fff;
+    float:left;
+}
