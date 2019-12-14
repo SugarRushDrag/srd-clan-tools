@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Sugar Rush Drag!</title>
+    <title>Login</title>
     <meta charset="UTF-8">
     <meta name="description" content="Clash of Clans tools for the clan #SugarRushDrag!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,7 +63,13 @@
 
     function loginFunc() {
         console.log("Login button is connected.");
-        window.location.href = "html/dashboard.html";
+        username = document.getElementById("username").value;
+        password = document.getElementById("password").value;
+        console.log("Current username: " + username)
+
+        if (username == "admin" && password == "staff") {
+            window.location.href = "html/dashboard.html";
+        }
     }
 
     document.getElementById("loginBtn").addEventListener("click", loginFunc);

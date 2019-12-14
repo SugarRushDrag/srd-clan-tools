@@ -254,6 +254,15 @@
     float:left;
 }
 
+    #links-1 h3 {
+        padding:2% 0 0 2%;
+    }
+
+    #links-1 li {
+        padding:2% 0 0 6%;
+        list-style-type:none;
+    }
+
 #links-2 {
     width:33%;
     height:20vh;
@@ -261,9 +270,64 @@
     float:left;
 }
 
+    #links-2 h3 {
+        padding:2% 0 0 2%;
+    }
+
+    #links-2 li {
+        padding:2% 0 0 6%;
+        list-style-type:none;
+    }
+
 #links-3 {
     width:34%;
     height:20vh;
     background-color: #fff;
     float:left;
+}
+
+    #links-3 h3 {
+        padding:2% 0 0 2%;
+    }
+    
+    #links-3 li {
+        padding:2% 0 0 6%;
+        list-style-type:none;
+    }
+
+/*
+*
+* Clan Search page styles
+*
+*/
+
+#clan-search-container {
+    background-color: transparent;
+    display:block;
+    margin:0px auto;
+    width:30%;
+    height:20vh;
+}
+
+#clan-search-container-inner {
+    background-color: transparent;
+    width:275px;
+    display:block;
+    margin:0px auto;
+}
+
+#clan-search-container p {
+    padding:4% 0 4% 0;
+}
+
+#clan-tag {
+    height:3vh;
+}
+
+#clanSearchBtn {
+    height:4vh;
+    padding:2% 4% 2% 4%;
+    background-color: #222;
+    border:none;
+    color:#fff;
 }
