@@ -23,7 +23,7 @@
             <div id="header">
 
                 <nav id="page-nav">
-                    <div id="clan-search-btn"><p>Clan Search</p></div>
+                    <div id="dashboard"><p>Dashboard</p></div>
                     <div id="war-league-btn"><p>War League</p></div>
                     <div id="classic-war-btn"><p>Classic War</p></div>
 
@@ -69,9 +69,9 @@
 
     console.log(" ******* Internal JS is connected ******* ")
 
-    function clanSearch() {
+    function goToDashboard() {
         console.log("Clan search button is connected.");
-        window.location.href = "../php/clan-search.html";
+        window.location.href = "../html/dashboard.html";
     }
 
     function warLeague() {
@@ -84,7 +84,7 @@
         window.open('../classic-pages/2019-12-14/Clash_of_Clans_Data_Wartime_Totals.html', '_blank');
     }
 
-    document.getElementById("clan-search-btn").addEventListener("click", clanSearch);
+    document.getElementById("dashboard").addEventListener("click", goToDashboard);
     document.getElementById("war-league-btn").addEventListener("click", warLeague);
     document.getElementById("classic-war-btn").addEventListener("click", classicWar);
 
