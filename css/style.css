@@ -335,6 +335,23 @@
         color:#cecece;
     }
 
+#footer {
+    background-color: #000;
+    height:10vh;
+    width:100%;
+    position:relative;
+}
+
+#footer p {
+    position:absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    text-align: center;
+    background-color: transparent;
+    width:100%;
+    color:#fff;
+}
+
 /*
 *
 * Clan Search page styles
