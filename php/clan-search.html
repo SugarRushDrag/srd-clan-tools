@@ -69,6 +69,25 @@
 
     console.log(" ******* Internal JS is connected ******* ")
 
+    function clanSearch() {
+        console.log("Clan search button is connected.");
+        window.location.href = "../php/clan-search.html";
+    }
+
+    function warLeague() {
+        console.log("War league button is connected.");
+        window.open('../league-pages/2019-12-13/Clash_of_Clans_Data_League_Totals.html', '_blank');
+    }
+
+    function classicWar() {
+        console.log("Classic war button is connected.");
+        window.open('../classic-pages/2019-12-14/Clash_of_Clans_Data_Wartime_Totals.html', '_blank');
+    }
+
+    document.getElementById("clan-search-btn").addEventListener("click", clanSearch);
+    document.getElementById("war-league-btn").addEventListener("click", warLeague);
+    document.getElementById("classic-war-btn").addEventListener("click", classicWar);
+
 
 </script>
 

@@ -3,19 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <style>
+
+      * {
+        margin:0;
+        padding:0;
+      }
+
       body {
         font-family: Arial, Helvetica, sans-serif;
+        background-color: #222;
+        margin:0;
+        padding:0;
       }
       table.clantable {
         border-collapse: separate;
         border-spacing: 0px;
+        width:100%;
+        background-color: #222;
       }
       table.clantable tr td {
-        background-color: #aaa;
+        border-bottom: solid #000 1px;
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #000;
+        padding-top: 5px;
+
       }
       table.clantable tr:first-child td:nth-child(3n+1) {
-        padding: 10px 20px;
-        vertical-align: top;
+
       }
       table.clantable tr:first-child td:first-child {
         text-align: center;
@@ -24,7 +40,7 @@
         width: 20em;
       }
       table.clantable tr:first-child td:nth-child(2) {
-        color: #e3cfb5;
+        color: #fff;
         font-size: 2em;
         font-weight: bold;
         text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000, -1px -1px 0px #000 ;
@@ -35,14 +51,10 @@
         vertical-align: bottom;
       }
       table.clantable tr:first-child td:nth-child(3) {
-        color: #4c4c4c;
+        color: #fff;
         font-size: 1em;
         font-weight: bold;
-        padding-top: 5px;
         white-space: nowrap;
-        text-align: right;
-        padding-left: 50px;
-        vertical-align: bottom;
       }
       table.clantable tr:nth-child(1n+2) td {
         border-bottom: solid #000 1px;
@@ -54,20 +66,16 @@
         white-space: nowrap;
       }
       table.clantable tr:nth-child(1n+2) td:first-child {
-        text-align: left;
-        padding-right: 50px;
+        text-align: center;
       }
       table.clantable tr:nth-child(1n+2) td:last-child {
-        text-align: right;
-        padding-left: 50px;
+
       }
       table.clantable tr:first-child > td:first-child {
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
+
       }
       table.clantable tr:first-child > td:last-child {
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
+
       }
       table.clantable .clanlevel {
         color: #fff;
@@ -76,7 +84,45 @@
         background-color: #000;
         padding: 3px;
       }
-    </style>
+      #back-container {
+        height:50px;
+        width:100%;
+        background-color: #222;
+        border-bottom: 1px solid #fff;
+      }
+      #back-btn {
+        height:50px;
+        width:10%;
+        background-color: #222;
+        border-bottom: 1px solid #fff;
+      }
+      #back-btn:hover {
+        height:50px;
+        width:10%;
+        background-color: #000;
+        border-right: 1px solid #fff;
+      }
+
+      #back-btn p {
+        color:#fff;
+        text-align: center;
+        padding:15px;
+      }
+
+      #desc-style {
+        padding:20px 0 0 20px;
+      }
+
+      #clan-level-style {
+        text-align: center;
+        width:20%;
+      }
+
+      #align-left {
+        text-align: left;
+        width:20%;
+      }
+      </style>
 <?php
 $clantag = $_POST["clan-tag"];
 
@@ -115,41 +161,44 @@ $members = $data["memberList"];
     exit;
   }
 ?>
+
+<div id="back-container"><div id="back-btn"><p>< BACK</p></div></div>
+
   <table class="clantable">
     <tr>
-      <td rowspan="11"><span class="clanlevel">Clan level : <?php echo $data["clanLevel"]; ?></span><br/><img src="<?php echo $data["badgeUrls"]["medium"]; ?>" alt="<?php echo $data["name"]; ?>"/></td>
+      <td id="clan-level-style" rowspan="11"><span class="clanlevel">Clan level : <?php echo $data["clanLevel"]; ?></span><br/><img src="<?php echo $data["badgeUrls"]["medium"]; ?>" alt="<?php echo $data["name"]; ?>"/></td>
       <td><?php echo $data["name"]; ?></td><td><?php echo $data["tag"]; ?></td>
-      <td rowspan="11"><?php echo $data["description"]; ?></td>
+      <td id="desc-style" rowspan="11"><?php echo $data["description"]; ?></td>
     </tr>
     <tr>
-      <td>Total points</td><td><?php echo $data["clanPoints"]; ?></td>
+      <td id="align-left">Total points</td><td><?php echo $data["clanPoints"]; ?></td>
     </tr>
     <tr>
-      <td>Wars won</td><td><?php echo $data["warWins"]; ?></td>
+      <td id="align-left">Wars won</td><td><?php echo $data["warWins"]; ?></td>
     </tr>
     <tr>
-      <td>War win streak</td><td><?php echo $data["warWinStreak"]; ?></td>
+      <td id="align-left">War win streak</td><td><?php echo $data["warWinStreak"]; ?></td>
     </tr>
     <tr>
-      <td>Wars drawn</td><td><?php echo $data["warTies"]; ?></td>
+      <td id="align-left">Wars drawn</td><td><?php echo $data["warTies"]; ?></td>
     </tr>
     <tr>
-      <td>Wars lost</td><td><?php echo $data["warLosses"]; ?></td>
+      <td id="align-left">Wars lost</td><td><?php echo $data["warLosses"]; ?></td>
     </tr>
     <tr>
-      <td>Members</td><td><?php echo $data["members"]; ?>/50</td>
+      <td id="align-left">Members</td><td><?php echo $data["members"]; ?>/50</td>
     </tr>
     <tr>
-      <td>Type</td><td><?php echo $data["type"]; ?></td>
+      <td id="align-left">Type</td><td><?php echo $data["type"]; ?></td>
     </tr>
     <tr>
-      <td>Required trophies</td><td><?php echo $data["requiredTrophies"]; ?></td>
+      <td id="align-left">Required trophies</td><td><?php echo $data["requiredTrophies"]; ?></td>
     </tr>
     <tr>
-      <td>War frequency</td><td><?php echo $data["warFrequency"]; ?></td>
+      <td id="align-left">War frequency</td><td><?php echo $data["warFrequency"]; ?></td>
     </tr>
     <tr>
-      <td>Clan location</td><td><?php echo $data["location"]["name"]; ?></td>
+      <td id="align-left">Clan location</td><td><?php echo $data["location"]["name"]; ?></td>
     </tr>
   </table>
   <table class="clantable">
@@ -163,11 +212,22 @@ $members = $data["memberList"];
       <td><?php echo "<b>", $member["name"], "</b><br/>", $member["role"]; ?></td>
       <td>Donated:<br/><?php echo $member["donations"]; ?></td>
       <td>Received:<br/><?php echo $member["donationsReceived"]; ?></td>
-      <td><?php echo $member["trophies"]; ?></td>
+      <td>Trophies:<br/><?php echo $member["trophies"]; ?></td>
     </tr>
 <?php
   }
 ?>
   </table>
+
+<script>
+
+function goBack() {
+  window.location.href = "clan-search.html";
+}
+
+  document.getElementById("back-btn").addEventListener("click", goBack);
+
+</script>
+
 </body>
 </html>

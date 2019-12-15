@@ -263,6 +263,14 @@
         list-style-type:none;
     }
 
+    #links-1 a {
+        color:#222;
+    }
+
+    #links-1 a:hover {
+        color:#cecece;
+    }
+
 #links-2 {
     width:33%;
     height:20vh;
@@ -277,6 +285,14 @@
     #links-2 li {
         padding:2% 0 0 6%;
         list-style-type:none;
+    }
+
+    #links-2 a {
+        color:#222;
+    }
+
+    #links-2 a:hover {
+        color:#fff;
     }
 
 #links-3 {
